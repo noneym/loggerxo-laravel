@@ -1,6 +1,6 @@
 # Loggerxo for Laravel
 
-Sends exceptions, log lines, breadcrumbs and performance transactions from a Laravel 10/11/12 app to a [Loggerxo](https://loggerxo.com) server.
+Sends exceptions, log lines, breadcrumbs and performance transactions from a Laravel 9, 10, 11 or 12 app to a [Loggerxo](https://loggerxo.com) server.
 
 ## Install
 
@@ -13,7 +13,14 @@ composer require noneym/loggerxo-laravel:dev-main
 LOGGERXO_DSN=https://lx_your_project_key@loggerxo.com
 LOGGERXO_ENVIRONMENT=${APP_ENV}
 LOGGERXO_RELEASE=1.0.0
-LOG_STACK=single,loggerxo      # optional: ship every log line too
+LOG_STACK=single,loggerxo      # optional (Laravel 11+): ship every log line too
+```
+
+On Laravel 9/10 add the channel to `config/logging.php` instead:
+
+```php
+'loggerxo' => ['driver' => 'loggerxo', 'level' => env('LOGGERXO_LOG_LEVEL', 'debug')],
+// and add 'loggerxo' to the 'stack' channel's 'channels' list
 ```
 
 ```bash

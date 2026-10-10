@@ -3,14 +3,20 @@
     "description": "Loggerxo SDK for Laravel: exceptions, logs, breadcrumbs and performance transactions.",
     "type": "library",
     "license": "MIT",
-    "keywords": ["laravel", "logging", "error-tracking", "monitoring", "loggerxo"],
+    "keywords": [
+        "laravel",
+        "logging",
+        "error-tracking",
+        "monitoring",
+        "loggerxo"
+    ],
     "homepage": "https://loggerxo.com",
     "require": {
-        "php": "^8.2",
-        "illuminate/support": "^10.0|^11.0|^12.0",
-        "illuminate/http": "^10.0|^11.0|^12.0",
-        "illuminate/log": "^10.0|^11.0|^12.0",
-        "monolog/monolog": "^3.0",
+        "php": "^8.0.2",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/http": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/log": "^9.0|^10.0|^11.0|^12.0",
+        "monolog/monolog": "^2.3|^3.0",
         "guzzlehttp/guzzle": "^7.5"
     },
     "autoload": {

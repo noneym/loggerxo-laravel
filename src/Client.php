@@ -396,6 +396,6 @@ class Client
             $body = gzencode($body, 6);
             $headers['Content-Encoding'] = 'gzip';
         }
-        Http::withHeaders($headers)->timeout($timeout)->connectTimeout(min(2.0, $timeout))->retry(1, 200, throw: false)->withBody($body, 'application/json')->post($endpoint);
+        Http::withHeaders($headers)->timeout($timeout)->connectTimeout(min(2.0, $timeout))->withBody($body, 'application/json')->post($endpoint);
     }
 }
