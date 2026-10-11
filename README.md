@@ -1,6 +1,8 @@
+<p align="center"><a href="https://loggerxo.com"><img src="https://raw.githubusercontent.com/noneym/loggerxo/main/art/mark.svg" width="72" alt="Loggerxo"></a></p>
+
 # Loggerxo for Laravel
 
-Sends exceptions, log lines, breadcrumbs and performance transactions from a Laravel 9, 10, 11 or 12 app to a [Loggerxo](https://loggerxo.com) server.
+Sends exceptions, log lines, breadcrumbs and performance transactions from a Laravel 9, 10, 11 or 12 app to a [Loggerxo](https://loggerxo.com) server. Loggerxo is open source; the hosted service at loggerxo.com is free to use.
 
 ## Install
 
